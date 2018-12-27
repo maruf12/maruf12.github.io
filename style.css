@@ -1,0 +1,160 @@
+html {
+  position: relative;
+
+}
+body {
+  margin-bottom: 80px;
+  margin-top: 30px;
+}
+
+#navbar {
+  height: 60px;
+}
+
+.jumbotron {
+  height: 600px;
+  background-image: url('image/macbook.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 0;
+  color: #eaeaea;
+  padding-top: 100px;
+  overflow: hidden;
+
+}
+  .jumbotron img {
+    width: 200px;
+    height: 180px;
+    border: 2px solid #eaeaea;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+  }
+
+  .jumbotron h1, .jumbotron p {
+    text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+  }
+
+  hr {
+    width: 200px;
+    border-top: 3px solid #999;
+  }
+
+  section {
+    min-height: 600px;
+  }
+
+  .text-about {
+    opacity: 0;
+    transform: translate(-50px, 0) rotate(15deg);
+    transition: 3s;
+    text-align: center;
+    font-size: 26px;
+    padding-top: 100px;
+    /* cari font family yang keren */
+  }
+
+  .text-about.text-about-show {
+    opacity: 1;
+    transform: translate(0,0);
+  }
+
+  #portfolio {
+    background-color: #eee;
+  }
+
+  .portfolio .thumbnail {
+    opacity: 0;
+    transform: translate(0, -50px);
+    transition: .5s;
+  }
+
+  .portfolio .thumbnail.show {
+    opacity: 1;
+    transform: translate(0,0);
+  }
+
+
+  .line-vertical {
+    border-left: 6px solid #4d4d4d;
+    height: 450px;
+    position: absolute;
+    left: 50%;
+    margin-top: 10px;
+    top: 0;
+  }
+
+  .line-exp-1{
+    border-top: 6px solid #4d4d4d;
+    position: absolute;
+    width: 100px;
+    top: 75px;
+    left: 50%;
+  }
+
+
+  .line-exp-2{
+    border-top: 6px solid #4d4d4d;
+    position: absolute;
+    width: 100px;
+    top: 225px;
+    right: 50%;
+  }
+
+  .line-exp-3{
+    border-top: 6px solid #4d4d4d;
+    position: absolute;
+    width: 100px;
+    top: 375px;
+    left: 50%;
+  }
+
+  .circle-right {
+    border: 6px solid #4d4d4d;
+    border-radius: 50%;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: -25px;
+    left: 98%;
+  }
+
+  .circle-left {
+    border: 6px solid #4d4d4d;
+    border-radius: 50%;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: -25px;
+    right: 98%;
+  }
+
+  .exp-1{
+    line-height: 100px;
+    text-align: left;
+  }
+  .exp-2{
+    line-height: 400px;
+    text-align: right;
+  }
+  .exp-3{
+    line-height: 450px;
+    text-align: left;
+  }
+
+  #skills {
+    background-color: #eee;
+  }
+
+
+  footer {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    bottom: 0;
+    background-color: #333;
+    padding-top: 30px;
+  }
+  footer p {
+    color: #aaa;
+    font-size: 1em;
+
+  }
