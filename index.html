@@ -1,238 +1,311 @@
-<!DOCTYPE html>
-<html lang="en" id="home">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Portfolio</title>
+<!doctype html>
+<html lang="en">
 
-    <!-- Bootstrap -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <!-- font google -->
+  <link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Open+Sans:700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav id="navbar" class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="#home" class="navbar-brand page-scroll">Ma'ruf Harsono</a>
+  <!-- My Css -->
+  <link rel="stylesheet" href="style.css">
+
+  <title>Ma'ruf Harsono</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
+    <div class="container" id="home">
+      <a class="navbar-brand" href="#">Ma'ruf H.</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#about">About</a>
+          <a class="nav-item nav-link" href="#resume">Resume</a>
+          <a class="nav-item nav-link" href="#skill">Skill</a>
+          <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
+          <a class="nav-item nav-link" href="#contact">Contact</a>
+          <!-- <a class="nav-item btn btn-primary tombol" href="#">Join Us</a> -->
         </div>
-
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about" class="page-scroll">About</a></li>
-            <li><a href="#portfolio" class="page-scroll">Portfolio</a></li>
-            <li><a href="#experience" class="page-scroll">Experience</a></li>
-            <li><a href="#skills" class="page-scroll">Skills</a></li>
-            <li><a href="#contact"class="page-scroll">Contact</a></li>
-          </ul>
-        </div>
-
       </div>
-    </nav>
-    <!-- Akhir Navbar -->
+    </div>
+  </nav>
+  <!-- Akhir Navbar -->
+  <!-- Jumbotron -->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Hello! i'm <br> <span>Ma'ruf Harsono</span></h1>
+      <p class="display-5">Frontend Developer</p>
+      <a href="#contact" class="btn btn-primary tombol">Let's Talk </a>
 
-    <!-- Jumbotron -->
-    <div class="jumbotron text-center">
-      <img src="image/resmi.jpg" class="img-circle" alt="">
-      <h1>Ma'ruf Harsono</h1>
-      <p>Frontend Developer | maruf.harsono@gmail.com</p>
+    </div>
+  </div>
+  <!-- Akhir Jumbotron -->
+
+  <!-- Container -->
+
+  <!-- info panel -->
+  <!-- <div class="row justify-content-center">
+      <div class="col-10 info-panel">
+        <div class="row">
+          <div class="col-lg">
+            <img src="img/employee.png" alt="Employee" class="float-left">
+            <h4>24 Hours</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div class="col-lg">
+            <img src="img/hires.png" alt="High Res" class="float-left">
+            <h4>24 Hours</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div class="col-lg">
+            <img src="img/security.png" alt="Security" class="float-left">
+            <h4>24 Hours</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  <!-- akhir info panel -->
+
+
+  <!-- Working space -->
+  <section id="about">
+    <div class="container">
+      <div class="row workingspace">
+        <div class="col-lg-5">
+          <img src="img/maruf-1.jpg" alt="Maruf Harsono" class="img-thumbnail" id="about">
+        </div>
+        <div class="col-lg-7">
+          <h2 class="section-name">About <span>Me</span></h2>
+          <h3>Hello! i'm Ma'ruf Harsono</h3>
+          <p>Memiliki pengalaman dibidang Embedded System dan Web Development.
+            Memiliki sertifikasi sebagai junior Frontend Developer dari Binar Academy.
+            Mampu melakukan kegiatan research dan mempelajari teknologi baru.
+            Mudah beradaptasi dan memiliki kemampuan komunikasi yang baik.</p>
+          <div class="social-media-image">
+            <a href="https://web.facebook.com/maruf.pps.5" target="_blank"><img src="img/facebook.png" alt=""></a>
+            <a href="https://twitter.com/marufharsono" target="_blank"><img src="img/twitter.png" alt=""></a>
+            <a href="https://www.instagram.com/maruf_harsono/?hl=id" target="_blank"><img src="img/ig.png" alt=""></a>
+            <a href="https://github.com/maruf12" target="_blank"><img src="img/github.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/maruf-harsono/" target="_blank"><img src="img/linkedin.png" alt=""></a>
+          </div>
+          <a href="#contact" class="btn btn-primary tombol">Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Akhir Working space -->
+
+  <!-- Resume -->
+  <section id="resume">
+    <div class="container">
+      <h2 class="section-name text-center"><span>My</span> Resume </h2>
+      <div class="row justify-content-center">
+        <div class="col-lg">
+          <div class="work">
+            <h3>Work</h3>
+            <div class="IT-support">
+              <h4>Intern IT Support Surya University</h4>
+              <h5>Jan 2016 - March 2016</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, quae! Magni, nisi unde.
+                Molestiae
+                quas, hic animi exercitationem doloremque quasi tempore labore velit rerum, qui odio corporis fugit.
+                Ab, est!</p>
+            </div>
+            <div class="intern-mediatrac">
+              <h4>Intern Mediatrac</h4>
+              <h5>Jan 2016 - March 2016</h5>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus accusantium nesciunt ipsum
+                odit?
+                Ullam iusto inventore explicabo delectus labore, aperiam, ut reprehenderit similique, illo impedit
+                rem
+                odit odio iure! Quis!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg">
+          <div class="education">
+            <h3>Education</h3>
+            <div class="surya-univ">
+              <h4>Surya University</h4>
+              <h5>Sep 2013 - Oct 2017</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nihil fugit laborum, ullam quaerat
+                reiciendis officiis voluptatum nam, consectetur voluptas modi sed accusamus? Modi sunt deleniti
+                aperiam!
+                Soluta, quam possimus?</p>
+            </div>
+            <div class="binar-academy">
+              <h4>Binar Academy Batch 4</h4>
+              <h5>Oct 2017 - Des 2017</h5>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate minus labore adipisci, magnam
+                necessitatibus quas deleniti optio laudantium dignissimos tenetur ducimus odio, magni saepe recusandae
+                eveniet, placeat voluptatum eaque consectetur?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Akhir Resume -->
+
+  <!-- Skill -->
+  <section id="skill">
+    <div class="container">
+      <h2 class="section-name text-center"><span>My</span> Skill </h2>
+      <div class="row justify-content-center d-flex skill-1">
+        <div class="col-lg-3 col-sm-6 justify-content-center d-flex">
+          <img src="img/html.png" alt="">
+        </div>
+        <div class="col-lg-3 col-sm-6 justify-content-center d-flex">
+          <img src="img/vuejs.png" alt="" class="vue">
+        </div>
+        <div class="col-lg-3 col-sm-6 justify-content-center d-flex">
+          <img src="img/js.png" alt="">
+        </div>
+        <div class="col-lg-3 col-sm-6 justify-content-center d-flex">
+          <img src="img/bootstrap.png" alt="">
+        </div>
+      </div>
+      <div class="row justify-content-center d-flex skill-2">
+        <div class="col-lg-3 col-sm-6 justify-content-center d-flex">
+          <img src="img/git2.png" alt="" class="git">
+        </div>
+        <div class="col-lg-3 col-sm-6 justify-content-center d-flex">
+          <img src="img/css.png" alt="">
+
+        </div>
+        <div class="col-lg-3 col-sm-6 justify-content-center d-flex">
+          <img src="img/arduino.png" alt="" class="arduino">
+        </div>
+        <div class="col-lg-3 col-sm-6 justify-content-center d-flex">
+          <img src="img/responsive.png" alt="">
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Akhir Skill -->
+
+  <!-- Portofolio -->
+  <section id="portfolio">
+    <div class="container">
+      <h2 class="section-name text-center"><span>My</span> Portfolio </h2>
+      <div class="row">
+        <div class="col-lg-4 portofolio-item">
+          <a href="https://calculator-410e8.firebaseapp.com/" target="_blank">
+            <img src="img/calculator-1.JPG" alt="" class="img-thumbnail">
+          </a>
+        </div>
+        <div class="col-lg-4 portofolio-item">
+          <a href="https://turnout-625ea.firebaseapp.com/" target="_blank">
+            <img src="img/game-suit.JPG" alt="" class="img-thumbnail">
+          </a>
+        </div>
+        <div class="col-lg-4 portofolio-item">
+          <a href="https://project-manage-44d0e.firebaseapp.com/" target="_blank">
+            <img src="img/project-manage.JPG" alt="" class="img-thumbnail">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Akhir portofolio -->
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-name text-center">Contact <span>Me</span></h2>
+      <div class="row">
+        <div class="col-lg map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d31654.239315468945!2d108.6045748331658!3d-7.37854544096856!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1546047309283"
+            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="col-lg">
+          <div class="address">
+            <div class="row">
+              <div class="col-lg-2">
+                <img src="img/address.png" alt="">
+              </div>
+              <div class="col-lg-10">
+                <h5>Address:</h5>
+                <p>Langensari Kota Banjar - Jawa Barat</p>
+              </div>
+            </div>
+          </div>
+          <div class="email">
+            <div class="row">
+              <div class="col-lg-2">
+                <img src="img/email.png" alt="">
+              </div>
+              <div class="col-lg-10">
+                <h5>Email:</h5>
+                <p>maruf.harsono@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="phone">
+            <div class="row">
+              <div class="col-lg-2">
+                <img src="img/phone.png" alt="">
+              </div>
+              <div class="col-lg-10">
+                <h5>Phone:</h5>
+                <p>085216369790</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- Akhir Jumbotron -->
+    </div>
+  </section>
+  <!-- Akhir Contact -->
+  <!-- end of Post section -->
+  <a href="#home">
+    <button id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+  </a>
+  <!-- footer -->
 
-    <!-- About -->
-    <section class="about" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <h2 class="text-center">About</h2>
-            <hr>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-2">
-          </div>
-          <div class="col-sm-8">
-            <p class="text-about">Have experience in embedded system and web development. And have certified as Junior Frontend Developer from Binar Academy.  Capable for researching and learning new technology. Early adapted, practice and good communication skill.</p>
-          </div>
-          <div class="col-sm-2">
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Akhir About -->
+  <!-- footer -->
+  <div class="row footer">
+    <div class="col text-center">
+      <p>2018 All Right Reserved by Ma'ruf H.</p>
+    </div>
+  </div>
+  <!-- Akhir footer -->
 
-    <!-- Portfolio -->
-    <section class="portfolio" id="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <h2 class="text-center">Portfolio</h2>
-            <hr>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <a href="" class="thumbnail">
-              <img src="image/1.JPG" alt="">
-            </a>
-          </div>
-          <div class="col-sm-4">
-            <a href="" class="thumbnail">
-              <img src="image/2.JPG" alt="">
-            </a>
-          </div>
-          <div class="col-sm-4">
-            <a href="" class="thumbnail">
-              <img src="image/3.JPG" alt="">
-            </a>
-          </div>
-          <div class="col-sm-4">
-            <a href="" class="thumbnail">
-              <img src="image/4.JPG" alt="">
-            </a>
-          </div>
-          <div class="col-sm-4">
-            <a href="" class="thumbnail">
-              <img src="image/5.JPG" alt="">
-            </a>
-          </div>
-          <div class="col-sm-4">
-            <a href="" class="thumbnail">
-              <img src="image/6.JPG" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Akhir Portfolio -->
-
-    <!-- Experience -->
-    <section id="experience">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <h2 class="text-center">Experience</h2>
-            <hr>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-            <h1 class="exp-2">
-              Mediatrac
-            </h1>
-          </div>
-          <div class="col-sm-4">
-            <div class="line-vertical"></div>
-            <div class="line-exp-1">
-              <div class="circle-right">
-              </div>
-            </div>
-            <div class="line-exp-2">
-              <div class="circle-left">
-              </div>
-            </div>
-            <div class="line-exp-3">
-              <div class="circle-right">
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <h1 class="exp-1">Binar Academy</h1>
-            <h1 class="exp-3">IT Infrastructure</h1>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Akhir Experience -->
-
-    <!-- Skill -->
-    <section id="skills">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <h2 class="text-center">Skills</h2>
-            <hr>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-2"></div>
-          <div class="col-sm-8">
-            <h3>JavaScript</h3>
-            <h3>HTML</h3>
-            <h3>CSS</h3>
-            <h3>Vue.js</h3>
-          </div>
-          <div class="col-sm-2"></div>
-        </div>
-      </div>
-    </section>
-    <!-- Akhir Skill -->
+  <!-- Akhir Container -->
 
 
-    <!-- Kontak -->
-    <section id="contact" class="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <h2 class="text-center">Contact</h2>
-            <hr>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 col-sm-offset-3">
-            <form class="">
-              <div class="form-group">
-                <label for="nama">Nama</label>
-                <input type="text" id="nama" class="form-control" placeholder="Masukan Email">
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="text" id="email" class="form-control" placeholder="Masukan Email">
-              </div>
-              <div class="form-group">
-                <label for="pesan">Pesan</label>
-                <textarea class="form-control" rows="10" placeholder="Masukan Pesan"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Kirim</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Akhir Kontak -->
 
-    <!-- Footer -->
-    <footer>
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-sm-12">
-            <p>&copy 2018 | Built with by <a href="">Ma'ruf Harsono</a></p>
-          </div>
-        </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="script.js"></script>
 
-      </div>
-    </footer>
-    <!-- Akhir Footer -->
+</body>
 
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-  </body>
 </html>

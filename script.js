@@ -1,58 +1,40 @@
-// event pada saat link di klik
-$('.page-scroll').on('click', function(e){
+$(document).ready(function () {
+  // Add smooth scrolling to all links
+  $("a").on('click', function (event) {
 
-  // ambil isi href
-  var tujuan = $(this).attr('href');
-  // tangkap element yang bersangkutan
-  var elemenTujuan = $(tujuan);
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-  // pindahkan scroll
-  $('html, body').animate({
-    scrollTop: elemenTujuan.offset().top - 50
-  }, 1250, 'swing');
+      // Store hash
+      var hash = this.hash;
 
-  e.preventDefault();
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 2000, function () {
 
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
 });
 
-// parallax
 
-// About
-// $(window).on('load', function(){
-//   $('.pKiri').addClass('pMuncul');
-//   $('.pKanan').addClass('pMuncul');
-// })
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction()
+};
 
-$(window).scroll(function(){
-  var wScroll = $(this).scrollTop();
-
-  // jumbotron
-  $('.jumbotron img').css({
-    'transform' : 'translate(0px, '+ wScroll/4 +'%)'
-  });
-
-  $('.jumbotron h1').css({
-    'transform' : 'translate(0px, '+ wScroll/2 +'%)'
-
-  });
-
-  $('.jumbotron p').css({
-    'transform' : 'translate(0px, '+ wScroll +'%)'
-  });
-
-  // portfolio
-  if( wScroll > $('.portfolio').offset().top - 250 ){
-    $('.portfolio .thumbnail').each(function(i){
-      setTimeout(function(){
-        $('.portfolio .thumbnail').eq(i).addClass('show');
-      }, 300 * (i+1));
-    });
-    //
+function scrollFunction() {
+  if (document.body.scrollTop > 650 || document.documentElement.scrollTop > 650) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
   }
+}
 
-  // About
-  if( wScroll > $('.about').offset().top -250 ){
-    $('.text-about').addClass('text-about-show');
-  }
-
-});
+// When the user clicks on the button, scroll to the top of the document
